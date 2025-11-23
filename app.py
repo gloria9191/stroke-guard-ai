@@ -7,6 +7,7 @@ model = joblib.load("stroke_model.pkl")
 scaler = joblib.load("scaler.pkl")
 feature_names = joblib.load("feature_names.pkl")
 
+HTML = """
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -241,7 +242,7 @@ $("#form").submit(function(e) {
 
 </body>
 </html>
-
+"""
 
 @app.route("/")
 def home():
@@ -271,4 +272,5 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
 
