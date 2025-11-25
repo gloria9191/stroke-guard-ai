@@ -117,7 +117,7 @@ HTML = """
     <h1>StrokeGuard AI</h1>
     <p class="lead fs-3 mt-3">인공지능 기반 뇌졸중 조기 예측 시스템</p>
     <p class="fs-4 opacity-90 mt-2">
-        제1회 전국 데이터 분석 대회 <span class="text-warning fw-bold">대상 수상작</span>
+        DSC 스타트업 챌린지 <span class="text-warning fw-bold">SYNAPSE</span>
     </p>
 </div>
 
@@ -272,5 +272,6 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
 
 
